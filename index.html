@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel-Guide</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 data-aos="zoom-in-up" class="logo">
+        <i class="fa-solid fa-plane" style="color: #9c4a77"></i>Travel
+        <span style="color: #9c4a77">Guide</span>
+      </h1>
+      <ul class="nav-link">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#explore">About</a></li>
+        <li><a href="#explore">Explore</a></li>
+        <li><a href="#desnations">Destinations</a></li>
+        <li class="ctn"><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fa-solid fa-bars" style="color: #9c4a77"></i>
+      </div>
+    </nav>
+    <header>
+      <div data-aos="zoom-in-up" id="home" class="header-content">
+        <img src="/images/plane.jpeg" alt="plane" />
+        <h2>Explore The World</h2>
+        <div class="line"></div>
+        <h1>Welcome To Our Travel Guide Website</h1>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+    </header>
+    <main>
+      <section id="desnations" class="event">
+        <div class="title">
+          <h1 data-aos="zoom-in-up">Popular Destination</h1>
+          <div class="line"></div>
+        </div>
+        <div class="row">
+          <div data-aos="zoom-in-up" class="col">
+            <img src="/images/turkey.jpeg" alt="Turkey" />
+            <h4>Turkey</h4>
+            <p>
+              Discover the enchanting beauty of Turkey, a country <br />
+              where East meets West Turkey offers a rich blend <br />
+              of culture, history, and natural wonders.
+            </p>
+            <a href="#" class="ctn">Learn More</a>
+          </div>
+          <div data-aos="zoom-in-up" class="col">
+            <img src="/images/london.jpeg" alt="london" />
+            <h4>London</h4>
+            <p>
+              London, a city where history meets modernity, <br />
+              offers iconic landmarks like the Tower of London<br />
+              London has something for every traveler.
+            </p>
+            <a href="#" class="ctn">Learn More</a>
+          </div>
+        </div>
+      </section>
+      <section data-aos="zoom-in-up" id="explore" class="explore">
+        <div class="explore-content">
+          <h1>Explore The World</h1>
+          <div class="line"></div>
+          <p style="font-size: 1.7rem">
+            Welcome to Our Travel Guide Website, we make travel easy. Our goal
+            is to help you discover amazing places and plan unforgettable trips.
+            Let's explore the world
+          </p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+      </section>
+      <section data-aos="zoom-in-up" id="contact" class="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <div class="line"></div>
+          <p>Have questions? Get in touch with us.</p>
+          <form action="#">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required rows="6"></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+      <section class="footer">
+        <p style="font-size: 1.2rem">
+          © 2024 Mehak Akram | All Rights Reserved.
+        </p>
+      </section>
+    </main>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+      });
+    </script>
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-link");
+      menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>
